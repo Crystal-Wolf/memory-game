@@ -1,0 +1,59 @@
+.tile-wrap {
+    border-radius: 10% !important;
+    height: 15rem;
+    width: 25rem;
+    /* padding: 5% 0; */
+    margin: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 3rem;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    background-image: url("../files/full-bloom.png");
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #1b1e2142;
+}
+
+.tile {
+    width: 100%;
+    backface-visibility: hidden;
+
+}
+
+.front {
+    height: 100%;
+    position: absolute;
+}
+
+.back {
+    height: 100%;
+    transform: rotateY( 180deg);
+    background-color: red;
+    border-radius: 10% !important;
+    position: absolute;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #1b1e2142;
+}
+
+.flipped {
+    transform: rotateY( 180deg);
+    box-shadow: unset;
+}
+
+.tiny {
+    font-size: 70%
+}
+
+#instructions {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#container {
+    padding: 0 5% 5%;
+}
+
+#pagewrapper {
+    height: 100vh;
+    overflow: hidden;
+}
